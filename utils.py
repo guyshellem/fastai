@@ -86,7 +86,7 @@ from keras.layers.normalization import BatchNormalization
 
 from keras.optimizers import SGD, RMSprop, Adam
 
-keras.layers import deserialize as layer_from_config
+from keras.layers import deserialize as layer_from_config
 
 from keras.metrics import categorical_crossentropy, categorical_accuracy
 
