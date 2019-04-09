@@ -351,7 +351,7 @@ class Vgg16():
 
         """
 
-        self.model.fit_generator(batches, samples_per_epoch=batches.samples, nb_epoch=nb_epoch,
+        self.model.fit_generator(batches, samples_per_epoch=batches.samples, nb_epoch=nb_epoch, verbose=0,
 
                                  validation_data=val_batches, nb_val_samples=val_batches.samples)
 
