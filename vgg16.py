@@ -337,7 +337,7 @@ class Vgg16():
 
         """
 
-        self.model.fit(trn, labels, nb_epoch=nb_epoch,
+        self.model.fit(trn, labels, nb_epoch=nb_epoch, verbose=0,
 
                        validation_data=(val, val_labels), batch_size=batch_size)
 

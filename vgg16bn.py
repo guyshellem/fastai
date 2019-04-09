@@ -242,7 +242,7 @@ class Vgg16BN():
 
     def fit_data(self, trn, labels,  val, val_labels,  nb_epoch=1, batch_size=64):
 
-        self.model.fit(trn, labels, nb_epoch=nb_epoch,
+        self.model.fit(trn, labels, nb_epoch=nb_epoch, verbose=0,
 
                 validation_data=(val, val_labels), batch_size=batch_size)
 
